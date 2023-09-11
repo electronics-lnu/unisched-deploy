@@ -1,0 +1,19 @@
+{
+  "name": "Розклад занять ЛНУ імені Івана Франка",
+  "short_name": "Розклад занять",
+  "description": "",
+
+  "background_color": "#141B4D",
+  "display": "standalone",
+
+  "scope": "/",
+  "start_url": "/",
+  
+  "icons": [
+    { "src": "/img/favicon.ico", "type": "image/x-icon", "sizes": "16x16 32x32" },
+    { "src": "/img/icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/img/icon-512.png", "type": "image/png", "sizes": "512x512" },
+    { "src": "/img/icon-192-maskable.png", "type": "image/png", "sizes": "192x192", "purpose": "maskable" },
+    { "src": "/img/icon-512-maskable.png", "type": "image/png", "sizes": "512x512", "purpose": "maskable" }
+  ]
+}
