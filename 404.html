@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>UniSched для ЛНУ імені Івана Франка</title>
+    <base href="/" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#141B4D" />
+    <link rel="icon" href="/img/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <!--suppress HtmlUnknownTarget -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!--suppress HtmlUnknownTarget -->
+    <link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="app">
+        <div class="loading-panel">
+            <img src="img/icon-192.png" style="width: 100px; height: 100px;" alt="UniSched"/>
+            <div class="loading-panel-text" style="margin-top: 20px;">Завантаження... <span class="loading-progress-text"></span></div>
+        </div>
+    </div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <!--suppress HtmlUnknownTarget -->
+    <script src="_content/MudBlazor/MudBlazor.min.js"></script>
+    <!--suppress HtmlUnknownTarget -->
+    <script src="_framework/blazor.webassembly.js"></script>
+    <!--suppress HtmlUnknownTarget -->
+    <script src="_content/Blazor-Analytics/blazor-analytics.js"></script>
+</body>
+</html>

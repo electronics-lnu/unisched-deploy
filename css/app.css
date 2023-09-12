@@ -28,6 +28,8 @@
     }
 
 .loading-panel {
+    background: #141B4D;
+    color: #ffffff;
     position: fixed;
     top: 0; bottom: 0;
     left: 0; right: 0;
@@ -41,6 +43,7 @@
 
 .loading-panel-text {
     font-family: Arial, sans-serif;
+    color: #ffffff;
 }
 
 .loading-progress-text:after {
