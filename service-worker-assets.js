@@ -857,7 +857,7 @@
       "url": "index.html"
     },
     {
-      "hash": "sha256-gHhqn25CfP2FZRlYRWAgPmHbBXQwaiW3pEFV5+H1gdU=",
+      "hash": "sha256-wniLKiaO6L7Nq5b9PtVbYojYNHcBfPpFpmiP3URG2pE=",
       "url": "manifest.json"
     },
     {
@@ -877,6 +877,18 @@
       "url": "proxify\/teachers.php"
     },
     {
+      "hash": "sha256-b+jPIML\/GTc0k\/2xLbSNN3+eQV9++NM21e0InHzP+Yk=",
+      "url": "screenshots\/screen_1.jpg"
+    },
+    {
+      "hash": "sha256-LEF65YRCGXE1kNZ6FksZd\/F9BBIm\/I64lkxLNNJ1Ho8=",
+      "url": "screenshots\/screen_2.jpg"
+    },
+    {
+      "hash": "sha256-4K6fUCkGG+EpB4kX3214RAy15lVOh3MKQVj1WBG5txY=",
+      "url": "screenshots\/screen_3.jpg"
+    },
+    {
       "hash": "sha256-dywA0vpXrat5nUtKxXXk8EYyZ2BD9\/Aa48u+qED9IIo=",
       "url": "_content\/Blazor-Analytics\/blazor-analytics.js"
     },
@@ -889,5 +901,5 @@
       "url": "_content\/MudBlazor\/MudBlazor.min.js"
     }
   ],
-  "version": "hqr8qYlr"
+  "version": "fxNMhzYC"
 };
