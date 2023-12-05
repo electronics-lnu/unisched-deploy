@@ -1,37 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>UniSched для ЛНУ імені Івана Франка</title>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>UniSched для ЛНУ імені Івана Франка</title>
-    <base href="/" />
-    <link href="css/app.css" rel="stylesheet" />
-    <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#141B4D" />
-    <link rel="icon" href="/img/favicon.ico" sizes="any">
-    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-    <!--suppress HtmlUnknownTarget -->
-    <link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
+    <meta name="robots" content="noindex">
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="img/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+            margin-top: 10px;
+        }
+
+        p, ul, ol { font-size: 1.2rem; }
+
+        button {
+            font-size: 1.2rem;
+            padding: 10px;
+        }
+
+        div.window {
+            position: absolute;
+            top: 0; left: 0;
+            right: 0; bottom: 0;
+            padding: 0; margin: 0;
+            border: none;
+        }
+        div.window div.title-bar div.title-bar-text {
+            font-size: 1.1rem;
+            padding: 5px;
+        }
+        div.window div.title-bar div.title-bar-controls button {
+            margin: 0;
+            zoom: 1.8;
+        }
+        div.window div.window-body {
+            border: none;
+            padding: 20px;
+        }
+        div.window div.window-body div, div.window div.window-body p {
+            margin-bottom: 1.2em;
+        }
+
+        div.window div.status-bar {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+        }
+    </style>
 </head>
 <body>
-    <div id="app">
-        <div class="loading-panel">
-            <img src="img/icon-192.png" style="width: 100px; height: 100px;" alt="UniSched"/>
-            <div class="loading-panel-text" style="margin-top: 20px;">Завантаження... <span class="loading-progress-text"></span></div>
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">UniSched – розклад занять</div>
+            <div class="title-bar-controls">
+                <a href="https://unisched.download/">
+                    <button aria-label="Minimize"></button>
+                </a>
+                <a href="https://unisched.download/">
+                    <button aria-label="Restore"></button>
+                </a>
+                <a href="https://unisched.download/">
+                    <button aria-label="Close"></button>
+                </a>
+            </div>
+        </div>
+        <div class="window-body">
+            <img src="img/msie1-2.png" />
+            <h2>Upgrade detected</h2>
+            <p>Відтепер знайомий тобі додаток UniSched стає набагато крутішим і з'являється у Google Play та інших магазинах мобільних застосунків</p>
+            <p>Переходь на новий вебсайт, або прямо зараз завантажуй UniSched на свій смартфон, безкоштовно</p>
+            <div>
+                <a href="https://unisched.download/"><button>Перейти на сайт додатка</button></a>
+            </div>
+            <div>
+                <a href="https://aka.sirkadirov.com/unisched/app"><button>Завантажити на смартфон</button></a>
+            </div>
+        </div>
+        <div class="status-bar">
+            <p class="status-bar-field">Sirkadirov</p>
+            <p class="status-bar-field">NGO Supreme Order</p>
         </div>
     </div>
-
-    <div id="blazor-error-ui">
-        An unhandled error has occurred.
-        <a href="" class="reload">Reload</a>
-        <a class="dismiss">🗙</a>
-    </div>
-    <!--suppress HtmlUnknownTarget -->
-    <script src="_content/MudBlazor/MudBlazor.min.js"></script>
-    <!--suppress HtmlUnknownTarget -->
-    <script src="_framework/blazor.webassembly.js"></script>
-    <!--suppress HtmlUnknownTarget -->
-    <script src="_content/Blazor-Analytics/blazor-analytics.js"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
 </body>
 </html>
